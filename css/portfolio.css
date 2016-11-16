@@ -1,0 +1,466 @@
+/* -- google font -- */
+@import 'https://fonts.googleapis.com/css?family=Hind+Vadodara:500';
+@import 'https://fonts.googleapis.com/css?family=Lora';
+@import 'https://fonts.googleapis.com/css?family=Roboto';
+@import 'https://fonts.googleapis.com/css?family=Pacifico';
+
+
+* {
+  padding            : 0;
+  margin             : 0;
+  box-sizing         : border-box;
+  -webkit-box-sizing : border-box;
+}
+
+html,
+body { 
+  height      : 100%;
+  overflow-x  : hidden;
+}
+
+/* fix */
+.marfix:before {
+  display : table;
+  content : " ";
+  clear   : both;
+  height  : 0;
+}
+
+.section {
+  width  : 100%;
+  height : 100%;
+}
+
+.wrapper {
+  width     : 960px;
+  max-width : 100%;
+  height    : 100%;
+  margin    : 0 auto;
+}
+
+/* -- Background -- */
+.a { background-color: #2a363b;}
+.b { background-color: #e84a5f;}
+.c { background-color: #ff847c;}
+.d { background-color: #99b898;}
+.e { background-color: #fcccab;}
+
+.pad-20    { padding : 20px; }
+.mr-top-55 { margin-top : 55px;}
+.mr-top-35 { margin-top : 35px;}
+.mr-top-25 { margin-top : 25px;}
+.mr-top-15 { margin-top : 15px;}
+.mr-left-15 { margin-left : 15px;}
+
+.block { display: block;}
+.none  { display: none;}
+
+
+/* -- section styling -- */
+#hw_to__scale {
+  transition         : transform .5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  -webkit-transition : transform .5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.toTranslate__100 {
+  transform         : translateX(100px);
+  -webkit-transform : translateX(100px);
+}
+
+#hw_intro {
+  display    : flex;
+  width      : 100%;
+  height     : 400px;
+  padding    : 25px;
+  text-align : center;
+  position   : relative;
+  top        : 50%;
+
+  -webkit-transform : translateY(-50%);
+  transform : translateY(-50%);
+}
+
+.hw_large_title {
+  font-family  : 'Hind Vadodara';
+  font-size    : 128px; 
+  color        : #e84a5f;
+  font-weight  : 600; 
+  word-spacing : 10px;
+}
+
+.hw_small_title {
+  font-family : 'Hind Vadodara';
+  font-size   : 18px; 
+  color       : #e84a5f;
+}
+
+.hw_intro_section { 
+  width   : 50%; 
+}
+
+.perspective-1200 {
+  perspective : 1200px;
+}
+
+#hw_intro_b {
+  list-style  : none;
+  font-family : "pacifico";
+  font-size   : 26px;
+  color       : #e84a5f;
+  width       : 100%;
+  height      : 100%;
+  border-left : 3px solid #e84a5f;
+  text-align  : left;
+  
+  transform : rotateY(-35deg);
+}
+
+#hw_intro_b > li {
+  padding  : 10px 25px;
+  cursor   : pointer;
+  position : relative;
+  overflow : hidden;
+}
+
+#hw_intro_b > li:after {
+  display          : block;
+  position         : absolute;
+  top              : 0;
+  width            : 100%;
+  height           : 100%;
+  background-color : #e84a5f;
+  content          : " ";
+  z-index          : -1;
+
+  transform  : translateX(-500px);
+  transition : transform 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+#hw_intro_b > li:hover {
+  color: #2a363b;
+}
+
+#hw_intro_b > li:hover:after,
+#hw_intro_b > li.selected:after {
+  transform : translateX(-150px);
+  z-index   : -1;
+}
+
+
+/* -- navigator link -- */
+#hw_caret {
+  position : fixed;
+  top      : 50px;
+  right    : 50px;
+  width    : 200px;
+  height   : 200px;
+  color    : #fcccab;
+  z-index  : 9;
+}
+
+.hw_menu_logo_wrapper {
+  width      : 100%;
+  padding    : 5px 20px;
+  text-align : right;
+}
+
+#hw_menu_bio {
+  display        : inline-block;
+  font-family    : "Hind Vadodara";
+  font-size      : 14px;
+  margin-right   : 30px;
+  padding-right  : 10px;
+  border-right   : 1px solid #bbb;
+  text-transform : uppercase;
+  color          : #bbb;
+  cursor         : pointer;
+  position       : relative;
+}
+
+#hw_menu_bio:after {
+  width      : 30px;
+  border-top : 1px solid #ddd;
+  position   : absolute;
+  content    : " ";
+  left       : 0;
+  top        : 0;
+  
+  -webkit-transition : transform .6s;
+  transition : transform .6s;
+}
+
+#hw_menu_bio:hover:after {
+  transform : translateY(20px);
+}
+
+#hw_menu_logo {
+  width            : 10px;
+  height           : 10px;
+  display          : inline-block;
+  background-color : #bbb;
+  border-radius    : 50%;
+  position         : relative;
+  left             : -10px;
+  cursor           : pointer;
+  transition       : transform 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+#hw_menu_logo:hover {
+  transform: rotate(360deg);
+}
+
+#hw_menu_logo:after,
+#hw_menu_logo:before {
+  width            : 10px;
+  height           : 10px;
+  display          : block;
+  background-color : #bbb;
+  border-radius    : 50%;
+  content          : " ";
+  position         : absolute;
+}
+
+#hw_menu_logo:after {
+  left : -13px;
+}
+
+#hw_menu_logo:before {
+  right : -13px;
+}
+
+#hw_caret_list {
+  width        : 100%;
+  list-style   : none;
+  text-align   : right;
+  padding      : 20px;
+  font-family  : 'Roboto';
+  font-size    : 14px;
+  font-weight  : 100;
+
+  opacity      : 0;
+  transform    : translateY(-10px);
+  transition   : all .5s;
+}
+
+#hw_caret_list.animate {
+  opacity   : 1;
+  transform : translateY(10px);
+}
+
+#hw_caret_list > li {
+  padding            : 5px 0;
+}
+
+#hw_caret_list > li > a {
+  cursor         : pointer;
+  letter-spacing : 1px;
+}
+
+/* -- biography-- */
+#hw_bio {
+  position         : fixed;
+  width            : 350px;
+  height           : 100%;
+  top              : 0;
+  left             : -350px;
+  background-color : #e84a5f;
+  z-index          : 9;
+
+  transition         : transform .5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  -webkit-transition : transform .5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.hw_bio_close {
+  width            : 48px;
+  height           : 48px;
+  position         : absolute;
+  right            : 0;
+  top              : 0;
+  background-color : #e84a5f;
+
+  transform         : translateY(-50%);
+  -webkit-transform : translateY(-50%);
+}
+
+/* About */
+#hw_about {
+  width  : 100%;
+  height : 300px;
+}
+
+#hw_intro_content {
+  font-family : "roboto";
+  font-size   : 18px;
+  color       : #2a363b;
+  padding     : 50px 0; 
+  text-align  : center;
+  line-height : 1.9; 
+}
+
+.bello {
+  font-family : "pacifico";
+  font-size   : 24px;
+  border-bottom : 1px solid #e84a5f;
+  padding : 0 10px; 
+}
+
+/* skill & development */
+
+.workplace {
+    background            : url(../img/workplace.jpg);
+    background-position   : 50%;
+    background-attachment : fixed;
+    background-size       : cover;
+}
+
+#hw_skill_c {
+  display : flex;
+  
+  width    : 100%;
+  height   : 500px;
+  padding  : 25px;
+  position : relative;
+  top      : 50%;
+  
+  background-color  : white;
+  -webkit-transform : translateY(-50%);
+  transform         : translateY(-50%);
+}
+
+#hw_skill_intro {
+  width  : 40%;
+  height : 100%;
+  color  : #2a363b;
+}
+
+#hw_skill_title {
+  font-family : "hind vadodara";
+  font-size   : 60px;
+}
+
+#hw_skill_title:after {
+  display    : block;
+  width      : 100px;
+  border-top : 2px solid #2a363b;
+  height     : 1px;
+  content    : " ";
+  margin-top : 15px;
+}
+
+#hw_skill_title + p {
+  font-family : "roboto";
+  margin-top  : 20px;
+  line-height : 1.6;
+}
+
+#hw_skill_set {
+  width       : 25%;
+  height      : 100%;
+  color       : #2a363b;
+  margin-left : 15px;
+}
+
+#skill_stack {
+  list-style  : none;
+  width       : 100%;
+  padding     : 0;
+  margin      : 0;
+  position    : relative;
+  top         : 50%;
+  font-family : roboto;
+  text-align  : center;
+  
+  -webkit-transform : translateY(-50%);
+  transform : translateY(-50%);
+}
+
+#skill_stack > li {
+  padding    : 10px;
+  cursor     : pointer;
+  position   : relative;
+
+  transition : all .9s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.skill_selected {
+  background-color: #e84a5f;
+  color           : #ddd;
+}
+
+.skill_selected:after{
+  position : absolute;
+  right    : -9px;
+  content  : " ";
+
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 10px 0 10px 15px;
+  border-color: transparent transparent transparent #e84a5f;
+}
+
+#hw_skill_stat {
+  width       : 32%;
+  height      : 100%;
+  margin-left : 15px;
+  color       : #2a363b; 
+}
+
+#skill_stat {
+  list-style : none;
+  position   : relative;
+  width      : 100%;
+  height     : 100%;
+}
+
+#skill_stat > li {
+  width    : 100%;
+  height   : 100%;
+  position : absolute;
+
+  box-shadow : 5px 7px 25px rgba(0,0,0,.1);
+}
+
+.skill_stat_title {
+  text-align    : center;
+  font-size     : 24px;
+  font-family   : "pacifico";
+  font-weight   : 100;
+  border-top    : 1px solid #2a363b;
+  border-bottom : 1px solid #2a363b;
+  padding       : 15px 0; 
+}
+
+.skill_stat_rating {
+  font-family : "pacifico";
+  font-size   : 20px;
+  padding     : 20px 0;
+}
+
+.skill_stat_rating > p {
+  text-align : center;
+  padding    : 10px 0;
+}
+
+.rating_block {
+  padding : 15px;
+}
+
+.rating_block > .rr_block {
+  float   : right;
+  display : block;
+}
+
+.rr_block > i {
+  display          : inline-block;
+  width            : 13px;
+  height           : 13px;
+  margin-right     : 1px;
+  background-color : #e84a5f;
+  border-radius    : 50%;
+}
+
+.rr_block > i.fade {
+  background-color: #ccc;
+}
+
