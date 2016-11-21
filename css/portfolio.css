@@ -251,7 +251,7 @@ body {
   top      : 50%;
   background-color  : white;
   -webkit-transform : translateY(-50%) rotateX(20deg) rotateY(-35deg) rotateZ(15deg);
-  transform         : translateY(-50%) rotateX(20deg) rotateY(-35deg) rotateZ(15deg);
+  transform         : translateY(-55%) rotateX(20deg) rotateY(-35deg) rotateZ(15deg);
 }
 
 /*
