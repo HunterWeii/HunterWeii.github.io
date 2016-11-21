@@ -39,8 +39,8 @@ body {
 }
 
 .center-align {
-  position : relative;
-  top      : 50%;
+  position  : relative;
+  top       : 50%;
   transform : translateY(-50%);
 }
 
@@ -71,36 +71,81 @@ body {
   100% { opacity : 0;}
 }
 
-/* Fixed header */
-#hunter_head {
-  display  : flex;
-  width    : 100%;
-  padding  : 25px 0;
+/* Fixed Element */
+#nav-left {
   position : fixed;
   top      : 0;
   left     : 0;
-  z-index  : 10;
-}
+  padding  : 10px;
+  width    : 100px;
+  height   : 100%;
+  z-index  : 2;
 
-#head-menu {
-  width       : 75px;
-  height      : 75px;
-  padding     : 10px;
-  font-family : "Monaco";
-  margin      : 0 50px;
-  text-align  : center; 
-  line-height:  2;
-}
-
-#head-menu > span {
-  font-size      : 24px;
-  font-weight    : 100;
-  letter-spacing :  5px;
-}
-
-.head-highlight {
+  font-family : "Roboto";
   color       : #ff847c;
-  border      : 1px solid #ff847c;
+  text-align  : center;  
+}
+
+#nav-left-logo {
+  position : absolute;
+  top      : 20px;
+  left     : 20px;
+  width    : 65px;
+  height   : 65px;
+  border   : 1px solid #ff847c;
+}
+
+#nav-left-logo > a {
+  font-size   : 24px;
+  line-height :  2.4;
+  cursor      : pointer;
+}
+
+#nav-menu {
+  width      : 65px;
+  margin     : 0 auto;
+  list-style : none;
+  text-align : center; 
+}
+
+#nav-menu > li {
+  position : relative;
+  padding  : 5px;
+  margin   : 10px 0;
+}
+
+#nav-menu > li > a {
+  display          : inline-block;
+  width            : 15px;
+  height           : 15px;
+  border-radius    : 50%;
+  background-color : #ff847c;
+  cursor           : pointer;
+}
+
+#nav-menu > li > .menu-tag {
+  position         : absolute;
+  top              : -5px;
+  display          : block;
+  padding          : 5px;
+  background-color : #ff847c;
+  color            : #eee; 
+  width            : 80px;
+  text-align       : center;
+  font-family      : "pacifico";
+  font-size        : 16px;
+  opacity          : 0;
+  z-index          : -1;
+  -webkit-transition : opacity .5s cubic-bezier(0.075, 0.82, 0.165, 1),
+                       transform .5s cubic-bezier(0.165, 0.84, 0.44, 1);
+
+  transition : opacity .5s cubic-bezier(0.075, 0.82, 0.165, 1),
+               transform .5s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+#nav-menu > li > a:hover + .menu-tag {
+  transform : translateX(55px);
+  opacity : 1;
 }
 
 /* main section */
@@ -124,6 +169,7 @@ body {
   background-color : #2a363b;
   color            : #eee;
   border           : 2px solid #ff847c;
+  font-size  : 14px;
 }
 
 #intro_terminal:before {
@@ -134,7 +180,7 @@ body {
   content          : "   hunter.exe";
   padding          : 5px 0;
   width            : 100%;
-  height           : 25px;
+  height           : 20px;
   background-color : #ff847c;
   border           : 2px solid #ff847c;
 }
@@ -190,6 +236,10 @@ body {
 }
 
 /* skill & development */
+#hw-skill-wrap {
+  perspective : 1600px;
+}
+
 #hw_skill_c {
   display        : flex;
   justify-content: space-around;
@@ -200,8 +250,8 @@ body {
   position : relative;
   top      : 50%;
   background-color  : white;
-  -webkit-transform : translateY(-50%);
-  transform         : translateY(-50%);
+  -webkit-transform : translateY(-50%) rotateX(20deg) rotateY(-35deg) rotateZ(15deg);
+  transform         : translateY(-50%) rotateX(20deg) rotateY(-35deg) rotateZ(15deg);
 }
 
 /*
