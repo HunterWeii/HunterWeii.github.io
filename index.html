@@ -1,184 +1,175 @@
-<!DOCTYPE html>
-<html>
+<!doctype>
+<html lang="en">
   <head>
-    <title>HW</title>
-    <link href="css/portfolio.css" rel="stylesheet">
+    <title>Hunter</title>
+    <link rel="stylesheet" href="css/portfolio.css">
   </head>
   <body>
-    <!-- Fixed element -->
-    <nav id="nav-left">
-      <div id="nav-left-logo">
-        <a> HW </a>
-      </div>
+    <!-- fixed element -->
+    <div id="hamburgur-icon">
+      <a id="hamburgur-link"></a>
+    </div>
 
-      <ul id="nav-menu" class="center-align">
+    <!-- navigator -->
+    <nav id="hunter-nav">
+      <a class="close-nav">{x close}</a>
+      <ul id="nav-list">
         <li>
-          <a href="#main"></a>
-          <span class="menu-tag">Main</span>
+          <span>01</span><a href="main">Hello, stranger</a>
         </li>
         <li>
-          <a href="#skill"></a>
-          <span class="menu-tag">Skill</span>
+          <span>02</span><a>About Me</a>
         </li>
         <li>
-          <a href="#timeline"></a>
-          <span class="menu-tag">Timeline</span>
+          <span>03</span><a>Tech Stack</a>
         </li>
         <li>
-          <a href="#work"></a>
-          <span class="menu-tag">Work</span>
+          <span>04</span><a>Experience</a>
         </li>
         <li>
-          <a href="#contact"></a>
-          <span class="menu-tag">Contact</span>
+          <span>05</span><a>Education</a>
         </li>
       </ul>
+      <!-- profile -->
+      <div id="nav-profile">
+        <img id="my-face" src="img/myface.jpg">
+        <p>Kedah, Malaysia</p> 
+        <p>mushroomweii@gmail.com</p>
+        <p>0164500596</p>
+      </div>
     </nav>
 
-    <!-- main section -->
+    <!-- main page -->
     <section id="main" class="section">
-      <!-- intro terminal -->
-      <div id="intro-card" class="a">
-        <div id="intro_terminal" class="center-align">
-          <p class="terminal_text"> > $hunter show -m intro.txt</p>
-          <p class="terminal_text mar-l-25"> Hello, I'm Tan Heng Wai. </p>
-          <p class="terminal_text mar-l-25"> I am Web developer and a Coffee Lover.</p>
-          <p class="terminal_text mar-l-25"> I teach myself coding during free time. I enjoy reading,Gaming and Runnig. </p>
-          <p class="terminal_text"> > $hunter show -m social_media.txt</p>
-          <p class="terminal_social">
-            <a class="btn-social social-hover">Facebook</a> 
-            <a class="btn-social">LinkedIn</a>
-            <a class="btn-social">Github</a>
-            <a class="btn-social">Codepen</a>
-          </p>
-          <p class="terminal_text"> > Say Cheese to me ! <span class="blink"></span></p>
-        </div>
-        <div id="intro_resume">
-          <a> Download </a>
+      <div id="introduction">
+        <span class="number">01</span>
+        <h1 class="page_title">{ Hello }<span>, I 'm Heng Wai. A maniac web developer.</span></h1>
+        <span class="line"></span>
+        <p> " Let me Code for you "</p>
+      </div>
+    </section>
+    <!-- main page -->
+
+    <!-- About me -->
+    <section id="about_me">
+      <div id="about_me_wrap" class="wrapper">
+        <span class="number">02</span>
+        <h1 class='page_title'> { About me } <span>, the mysterious me.</span></h1>
+        <article>
+          Hello again, stranger. My full name is <u>Tan Heng Wai</u>, friends usually call me <u>Hunter</u> for weird reason. 
+          I poses a huge <span class='mention'>passion</span> for Web Technology. I love writing <span class="mention">Javascript</span>, 
+          i would said that i will die for it. However, i also love exploring web technology from Front-End to Back-End. Writing HTML and CSS until Back-End side
+          such as PHP and Mysql make me feel great for a day. I usually code my stuff in local machine and Codepen.
+          If you dont mind, you can visit <a href="https://codepen.io/hw26/" target="blank">here</a> to check out what i have done.
+          I am weak againts Algorithm, but the great fear doesn't stop me visit <a href="https://codefights.com/profile/hunter3" target="blank">CodeFights</a> to practice and conquer it.
+          <div class="breakline"></div>
+          During free time, i explore learning resources for myself. It is about hunting, you need to feed
+          youself so that you are always prepared to face any challenge. When i am not coding in front of my
+          computer, i enjoy gaming, running and reading. Alright, enough for introduction. Although i start my web development's
+          journey for almost 2 years, let me <span class='mention'>summarize</span> up 
+        </article>
+        <!-- what i can do -->
+        <div id="ability_me">
+          <h1 class="text-c"> What Can I Do for You </h1>
+          <div id="ability_showcase">
+
+            <div class="gridcase">
+              <img src="img/mockup.png">
+              <h3> Translate Mockup </h3>
+              <span class="line-thin"></span>
+              <p>
+                Yes, i can translate mockup for you. I write html & css and able 
+                make it Responsive as well. Forgot to mention one of my weakness, i can't design.
+                So if you have design course for developer, please share with me.
+              </p>
+            </div>
+
+            <div class="gridcase selected">
+              <img src="img/js.png">
+              <h3> JavaScript </h3>
+              <span class="line-thin"></span>
+              <p>
+                Oh yeah! I hype when i code and study javascript. Count on me if you need to fetch
+                data from server or manipulate anything related to interface(DOM). Favoriate programming paradigm ?
+                Functional Programming. 
+              </p>
+            </div>
+
+            <div class="gridcase">
+              <img src="img/database.png">
+              <h3> Backend </h3>
+              <span class="line-thin"></span>
+              <p>
+                Okay my first workplace doesnt have Backend Developer. So i decide to learn and code backend by myself.
+                I can code php and Mysql and using framework like CodeIgniter. I am learning Ruby right now.
+              </p>
+            </div>
+
+            <div class="gridcase">
+              <img src="img/coffee.png">
+              <h3> Coffee </h3>
+              <span class="line-thin"></span>
+              <p>
+                Opps, this is not JAVA. I love coffee, just want to tell you i addict to coffee.
+                I can make one for you.
+              </p>
+            </div>
+
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- skill and Development-->
-    <section id="skill" class='section f'>
-      <div id="hw-skill-wrap" class='wrapper marfix'>
-        <div id="hw_skill_c">
-          <!-- introduction -->
-          <div id="hw_skill_intro">
-            <h4 id="hw_skill_title">Skill ++</h4>
-            <p>
-              Teach myself or being teach by someone else. Love to Collect Resources. From internet, youtube,
-              or books.
-              Enjoy every experiment conducted. Failure will show you success. Collectable skill.
-              Belive on pratice will make everything perfect.
-              Front-end Technology. Back-End Technology. Road to Full-stack ! Trending-trending web technology.
-            </p>
-            <div id="hw_skill_selection">
-              <div id="ss_container">
-                <a class="ss_prev"></a>
-                <a class="ss_next"></a>
-                <div id="ss_slider">
-                  <a class="skill-front">Front-End</a>
-                  <a class="skill-back">Back-End</a>
-                  <a class="skill-ints">Interested Area</a>
-                </div>
-              </div>
-            </div>
-          </div>
+    <!-- tech stack -->
+    <section id="tech_stacks">
+      <div class="wrapper">
+        <span class="number">03</span>
+        <h1 class='page_title'> { Tech Stack } <span>, the ultimate coding weapon.</span></h1>
+        <div id="tech_container">
 
-          <!-- skill statistic -->
-          <div id="hw_skill_stat" >
-            <ul id="skill_stat">
-              <li class="">
-                <h4 class="skill_stat_title">
-                  Front End Stack
-                </h4>
-                <div class="skill_stat_rating">
-                  <div class="rating_block">
-                    JavaScript 
-                    <span class="rr_block">
-                      <i></i><i></i><i></i><i></i><i class="fade"></i>
-                    </span>
-                  </div>
-                  <div class="rating_block">
-                    JQuery
-                    <span class="rr_block">
-                      <i></i><i></i><i></i><i></i><i class="fade"></i>
-                    </span>
-                  </div>
-                  <div class="rating_block">
-                    HTML5 
-                    <span class="rr_block">
-                      <i></i><i></i><i></i><i class="fade"></i><i class="fade"></i>
-                    </span>
-                  </div>
-                  <div class="rating_block">
-                    CSS3 
-                    <span class="rr_block">
-                      <i></i><i></i><i></i><i class="fade"></i><i class="fade"></i>
-                    </span>
-                  </div>
-                  <div class="rating_block">
-                    Responsive
-                    <span class="rr_block">
-                      <i></i><i></i><i></i><i class="fade"></i><i class="fade"></i>
-                    </span>
-                  </div>
-                </div>
-              </li>
-              <li class="none">
-                <h4 class="skill_stat_title">
-                  Back End Stack
-                </h4>
-                <div class="skill_stat_rating">
-                  <div class="rating_block">
-                    PHP
-                    <span class="rr_block">
-                      <i></i><i></i><i></i><i class="fade"></i><i class="fade"></i>
-                    </span>
-                  </div>
-                  <div class="rating_block">
-                    Code Igniter
-                    <span class="rr_block">
-                      <i></i><i></i><i></i><i class="fade"></i><i class="fade"></i>
-                    </span>
-                  </div>
-                  <div class="rating_block">
-                    MySql
-                    <span class="rr_block">
-                      <i></i><i></i><i></i><i class="fade"></i><i class="fade"></i>
-                    </span>
-                  </div>
-                  <div class="rating_block">
-                    Smarty
-                    <span class="rr_block">
-                      <i></i><i></i><i class="fade"></i><i class="fade"></i><i class="fade"></i>
-                    </span>
-                  </div>
-                  <div class="rating_block">
-                    Ruby
-                    <span class="rr_block">
-                      <i></i><i></i><i class="fade"></i><i class="fade"></i><i class="fade"></i>
-                    </span>
-                  </div>
-                </div>
-              </li>
-              <li class="none">
-                <h4 class="skill_stat_title">
-                  Future Development
-                </h4>
-                <div class="skill_stat_rating">
-                  <p>Linux OS</p> 
-                  <p>Angular 2</p> 
-                  <p class="rr_block">Rails</p>
-                  <p class="rr_block">IOS Mobile</p>
-                </div>
-              </li>
-            </ul>
-          </div>
         </div>
       </div>
-    </section><!-- end::skill and Development-->
-    <script src='script/jquery-3.0.0.min.js'></script>
+    </section>
+
+    <!-- education -->
+    <section id="education">
+      <div class="wrapper">
+        <span class="number">05</span>
+        <h1 class='page_title'> { Education } <span>, the ultimate coding weapon.</span></h1>
+      </div>
+      <div class="school bg-b">
+        <div>
+          <h4>2.6</h4>
+          <span> Tunku Abdul Rahman College </span>
+          <p>2007-2009</p>
+          <span> Diploma in Science(Internet Technology)</span>
+        </div>
+      </div>
+      <div class="school">
+        <div>
+          <h4>2.7</h4>
+          <span> Universiti Tunku Abdul Rahman </span> 
+          <p>2010-2014</p>
+          <span> Bachelor Degree(hons) of Computer Science </span>
+        </div>
+      </div>
+    </section>
+    
+    <script>
+
+      var hamburgur   = document.querySelector("#hamburgur-icon");
+      var nav_menu    = hamburgur.nextElementSibling;
+      var close_menu  = nav_menu.children[0];
+
+      function toggleNav() {
+        console.log("sss");
+        nav_menu.classList.toggle("open");
+      }
+
+      hamburgur.addEventListener("click", toggleNav);
+      close_menu.addEventListener("click", toggleNav);
+    
+    </script>
+ 
   </body>
 </html>
