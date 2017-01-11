@@ -373,6 +373,63 @@ body {
   height     : 600px;
 }
 
+/* experience */
+#experience {
+  font-family      : "arvo";
+  background-color : #363636;
+  color            : #ccc;
+  padding          : 50px 0;
+}
+
+#exp_container {
+  width  : 100%;
+  height : 600px;
+}
+
+#exp_list {
+  display         : flex;
+  justify-content : center;
+  position        : relative;
+  top             : 50%;
+  transform       : translateY(-50%);
+  list-style      : none;
+  font-family     : "arvo"
+}
+
+#exp_list > li {
+  position   : relative;
+  overflow   : hidden;
+  color      : #ccc;
+  height     : 25px;
+  text-align : center;
+}
+
+#exp_list > li > span {
+  font-size  : 14px;
+  line-height: 1.7;
+  font-family: "open sans";
+}
+
+.w-10 { 
+  width            : 10%; 
+  background-color : #e8175d; 
+}
+
+.w-15 { 
+  width : 15%; 
+  background-color: #355c7d;
+}
+
+.w-20 { 
+  width : 20%;
+  background-color: #ff4e50;
+}
+
+.w-30 { 
+  width : 30%; 
+  background-color: #333;
+}
+
 /* Education */
 #education {
   font-family      : "arvo";
