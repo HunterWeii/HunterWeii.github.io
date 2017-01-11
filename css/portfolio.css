@@ -175,12 +175,61 @@ body {
   margin    : 10px 0;
 }
 
+#nav-profile > p > a {
+  display         : inline-block;
+  border          : 1px solid #e8175d;
+  text-decoration : none;
+  padding         : 5px;
+  color           : #e8175d;
+}
+
 #my-face {
   border-radius : 50%;
   width         : 120px;
   height        : 120px;
 }
 
+/* find me */
+#nav-findme {
+  padding     : 10px 0;
+  text-align  : center;
+  font-family : Arvo;
+  font-size   : 14px;
+}
+
+#nav-findme > p {
+  margin-top : 30px;
+}
+
+#nav-findme > a {
+  position        : relative;
+  display         : inline-block;
+  font-size       : 12px;
+  border          : 1px solid #e8175d;
+  padding         : 5px;
+  margin-top      : 10px;
+  color           : #e8175d;
+  text-decoration : none;
+}
+
+#nav-findme > a:after {
+  position         : absolute;
+  top              : 50%;
+  left             : 0;
+  display          : block;
+  width            : 0;
+  border-top       : 1px solid #e8175d;
+  background-color : #363636;
+  content          : " ";
+  padding          : 0;
+  margin           : 0;
+
+  transition : width .5s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+#nav-findme > a:hover:after {
+  width : 100%;
+}
 /* main page */
 #main {
   background-color : #363636;
